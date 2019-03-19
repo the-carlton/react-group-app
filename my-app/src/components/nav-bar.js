@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import App from "../App";
 import {
     Container,
     Navbar
 } from 'reactstrap';
 
-class Navbar extends Component {
+class Navbar1 extends Component {
     render() {
         return (
-            <Container>
-                <p>test</p>
-            </Container>
+            <Navbar color="dark" light expand="md">
+                <Container>
+                    <h1>TEST</h1>
+                </Container>
+            </Navbar>
         );
     }
 }
 
-export default Navbar;
+export default Navbar1;
