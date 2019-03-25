@@ -1,0 +1,11 @@
+#clockContainer {
+    margin: 0;
+    padding: 0;
+    max-width: none;
+    /*background-image: url("./img/53096861-stock-vector-vector-modern-seamless-sacred-geometry-pattern-trippy-black-and-white-abstract-geometric-background-.jpg");*/
+    background-attachment: fixed;
+}
+
+#time{
+    font-size: 15em;
+}

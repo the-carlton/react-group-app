@@ -4,6 +4,8 @@ import React, { Component } from 'react';
 import Contacts from './components/Contacts.js';
 import Header from './components/Header.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Clock from './components/Clock.js';
+import Form1 from './components/Form.js';
 import './App.css';
 
 class App extends Component {
@@ -13,6 +15,8 @@ class App extends Component {
           <Header branding="Contact Manager"/>
           <div className={"container"}>{/*<Navbar1 />*/}
             <Contacts />
+            <Clock />
+            <Form1 />
           </div>
         </div>
     );
