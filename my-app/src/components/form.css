@@ -1,0 +1,17 @@
+#output {
+    font-size: 10em;
+    max-width: 200px;
+}
+
+#formCon {
+    max-width: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+#row {
+    max-width: 200px;
+    margin: 0;
+    padding: 0;
+}
+
