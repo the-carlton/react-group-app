@@ -1,5 +1,6 @@
 //React Form Component
 import React, { Component } from 'react';
+import Disply from "./disply.js";
 import './form.css';
 import {
     Container,
@@ -8,6 +9,7 @@ import {
     Form,
     FormGroup,
 } from 'reactstrap';
+import Contact from "./Contacts";
 
 class Form1 extends Component{
     constructor (props) {
@@ -35,7 +37,7 @@ class Form1 extends Component{
 
 
     componentDidMount() {
-
+        
     }
 
     render(){
@@ -48,10 +50,10 @@ class Form1 extends Component{
                             <input className="form-control" type="text" value={this.state.inputvalue} onChange={this.handleChange.bind(this)}/><br/>
                             <input className="form-control" type="submit" value="Submit"/>
                         </form>
+                        <div>
+                            <Disply input={this.state.inputvalue}/>
+                        </div>
                     </div>
-                </Row>
-                <Row>
-                    <div id="output" >{ this.state.inputvalue }</div>
                 </Row>
             </Container>
 
