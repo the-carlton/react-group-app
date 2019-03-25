@@ -1,5 +1,4 @@
 // React Time clock
-
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './clock.css';
@@ -8,6 +7,8 @@ import {
     Row,
     Col,
 } from 'reactstrap';
+import Header from "./Header";
+
 
 let today = new Date();
 let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
@@ -15,7 +16,7 @@ let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds(
 class Clock extends Component{
     constructor(props){
         super(props);
-        this.state = {
+        this.state = time = {
             time: time,
             hours: today.getHours(),
             mins: today.getMinutes(),
@@ -30,7 +31,7 @@ class Clock extends Component{
         let hour = document.getElementById('hours');
         let back = document.getElementById('clockContainer');
 
-        let colors = ['red', 'blue', 'purple', 'brown', 'black', 'green', 'yellow'];
+        let colors = ['#F2EFF5', '#E87B81', '#4C7E85', '#E88483', 'black', '#E88483', '#838FAC'];
 
         function changecolor() {
             let number1 = Math.floor(Math.random() * 7);
@@ -54,6 +55,8 @@ class Clock extends Component{
         }
 
 
+
+
         this.interval = setInterval(() => this.setState({
             mins: new Date().getMinutes(),
             secs: new Date().getSeconds(),
@@ -73,6 +76,7 @@ class Clock extends Component{
 
     render(){
         return(
+
             <Container className="container-fluid" id="clockContainer">
                 <Row>
                     <div className="mx-auto">

@@ -6,16 +6,19 @@ import Header from './components/Header.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Clock from './components/Clock.js';
 import Form1 from './components/Form.js';
+import disply from './components/disply.js';
 import './App.css';
 
 class App extends Component {
+   
+
   render() {
     return (
         <div className="App">
-          <Header branding="Contact Manager"/>
+          <Header branding="Contact Manager" />
           <div className={"container"}>{/*<Navbar1 />*/}
             <Contacts />
-            <Clock />
+            <Clock  />
             <Form1 />
           </div>
         </div>

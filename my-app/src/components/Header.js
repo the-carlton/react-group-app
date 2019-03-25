@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Clock from './Clock.js';
 import PropTypes from 'prop-types';
+import './header.css';
 
 const Header = (props) => {
-    const { branding } = props;
+    const { branding, time } = props;
     return (
-        <nav className="navbar navbar-expand-sm navbar-dark bg-danger mb-3 py-0">
+        <nav id={"nav"} className="navbar navbar-expand-sm navbar-dark bg mb-3 py-0">
             <div className="container">
                 <a href="/" className="navbar-brand">
                     {branding}
@@ -15,6 +17,9 @@ const Header = (props) => {
                             <a href="/" className="nav-link">
                                 Home
                             </a>
+                        </li>
+                        <li className="nav-item">
+                            <div id={"time"}><Clock /></div>
                         </li>
                     </ul>
                 </div>
